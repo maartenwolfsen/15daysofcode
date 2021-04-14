@@ -3,11 +3,20 @@
     margin: 0;
 }
 
-body.home {
+p, input, textarea {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*=========================================*/
+/* DEFAULT LAYOUT */
+/*=========================================*/
+
+body.default-layout {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 30s linear infinite;
     font-family: 'Fraunces', serif;
+    min-height: 100vh;
 }
 
 @keyframes gradient {
@@ -22,7 +31,7 @@ body.home {
     }
 }
 
-body.home .content {
+body.default-layout .content {
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -30,28 +39,28 @@ body.home .content {
     transform: translateY(-50%);
 }
 
-body.home .content .logo {
+body.default-layout .content .logo {
     width: 500px;
 }
 
-body.home .content ul {
+body.default-layout .content ul {
     margin-top: 40px;
 }
 
-body.home .content ul li {
+body.default-layout .content ul li {
     margin-bottom: 20px;
     list-style: none;
 }
 
-body.home .content ul li a {
+body.default-layout .content ul li a {
     color: #F9D200;
     text-shadow: 4px 4px 0 rgba(56, 46, 13, 1);
     font-size: 46px;
     font-weight: bold;
 }
 
-body.home .content ul li a:before,
-body.home .content ul li a:after {
+body.default-layout .content ul li a:before,
+body.default-layout .content ul li a:after {
     display: none;
     background: #F9D200;
     box-shadow: 4px 4px 0 rgba(56, 46, 13, 1);
@@ -64,9 +73,22 @@ body.home .content ul li a:after {
     margin: 0 15px;
 }
 
-body.home .content ul li a:hover:before,
-body.home .content ul li a:hover:after {
+body.default-layout .content ul li a:hover:before,
+body.default-layout .content ul li a:hover:after {
     display: inline-block;
+}
+
+body.default-layout h1,
+body.default-layout h2,
+body.default-layout h3 {
+    color: #F9D200;
+    text-shadow: 4px 4px 0 rgba(56, 46, 13, 1);
+    font-weight: bold;
+}
+
+body.default-layout h1 {
+    font-size: 56px;
+    margin-bottom: 40px;
 }
 
 /*=========================================*/
@@ -79,9 +101,13 @@ footer {
     font-family: 'Fraunces', serif;
     position: absolute;
     bottom: 0;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     width: 100%;
+}
+
+footer .footer-separator {
+    padding: 0 10px;
 }
 
 footer a {
@@ -92,6 +118,17 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer a.github-link {
+    position: relative;
+    top: 7px;
+    padding-right: 5px;
+}
+
+footer a.github-link img {
+    width: 25px;
+    height: 25px;
 }
 
 footer form {

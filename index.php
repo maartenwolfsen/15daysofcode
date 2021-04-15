@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>15 Days Of Code - Learn coding, day by day</title>
+        <title>15 Days Of Code - Learn code, day by day</title>
         <?php include "./partials/head.php" ?>
     </head>
     <body class="default-layout">

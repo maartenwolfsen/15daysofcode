@@ -137,3 +137,85 @@ footer form {
     top: 6px;
     left: 10px;
 }
+
+/*=========================================*/
+/* Days Selector */
+/*=========================================*/
+
+#selector-mw.tns-ovh {
+    overflow: visible;
+    overflow-x: hidden;
+    height: 500px;
+    padding-top: 200px;
+}
+
+#selector .select-day {
+    position: relative;
+    height: 200px;
+    user-select: none;
+    -webkit-user-drag: none;
+    filter: grayscale(0);
+    transition: .5s;
+    transform: scale(1, 1);
+    top: 0;
+}
+
+#selector .select-day.inactive {
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+#selector .select-day.complete:after {
+    content: "Completed";
+    background-color: #0ff72b;
+    border-top: 2px solid #000;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+#selector .select-day:hover {
+    z-index: 999;
+    transform: scale(1.1, 1.1);
+    top: 20px;
+}
+
+#selector .select-day .inner {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .2);
+}
+
+#selector .select-day:hover .inner {
+    box-shadow: 0 45px 120px rgba(0, 0, 0, .4);
+}
+
+#selector .select-day .inner h3 {
+    text-align: center;
+    font-size: 42px;
+    text-shadow: 2px 2px 0  rgb(56 46 13);
+    line-height: 185px;
+}
+
+.select-day[data-day="1"] .inner { background-color: #eb3434; }
+.select-day[data-day="2"] .inner { background-color: #eb8034; }
+.select-day[data-day="3"] .inner { background-color: #ebc934; }
+.select-day[data-day="4"] .inner { background-color: #d3eb34; }
+.select-day[data-day="5"] .inner { background-color: #86eb34; }
+.select-day[data-day="6"] .inner { background-color: #34eb5c; }
+.select-day[data-day="7"] .inner { background-color: #34eba8; }
+.select-day[data-day="8"] .inner { background-color: #34ebe8; }
+.select-day[data-day="9"] .inner { background-color: #34aeeb; }
+.select-day[data-day="10"] .inner { background-color: #345feb; }
+.select-day[data-day="11"] .inner { background-color: #6e34eb; }
+.select-day[data-day="12"] .inner { background-color: #bd34eb; }
+.select-day[data-day="13"] .inner { background-color: #eb34d0; }
+.select-day[data-day="14"] .inner { background-color: #eb3480; }
+.select-day[data-day="15"] .inner { background-color: #eb3434; }

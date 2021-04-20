@@ -1,4 +1,4 @@
-<h1>Select the challenge you want to tackle!</h1>
+<h1 class="selector-heading">Select the challenge you want to tackle!</h1>
 <div id="selector">
     <?php for ($i = 0; $i < DAYS; $i++) : ?>
         <?php $day = $i + 1 ?>

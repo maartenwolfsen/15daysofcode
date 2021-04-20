@@ -1,4 +1,4 @@
-var slider = tns({
+tns({
     "container": '#selector',
     "items": 3,
     "slideBy": "page",
